@@ -83,7 +83,7 @@ const ComicIndex = ({ user, msgAlert }) => {
 			</Link>
 			<h1 className="index-header">All Comics</h1>
 			<Container className="comic-panel">
-				<Card.Group centered>{ComicCards}</Card.Group>
+				<Card.Group centered itemsPerRow={3}>{ComicCards}</Card.Group>
 			</Container>
 		</>
 	)
