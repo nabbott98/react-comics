@@ -64,13 +64,13 @@ const CharacterIndex = ({ user, msgAlert }) => {
 
 			{/* extra content for the bottom to link to just that line of characters or something */}
 			{/* Maybe we should have a main character listed so we can say "Iron man appears in 'x' other issues" */}
-			<Card.Content extra>
+			{/* <Card.Content extra>
 				<a>
 					<Icon name="user" />
 					{Character.alias} appears in 'this # of'{Character.editions}{" "}
 					comics
 				</a>
-			</Card.Content>
+			</Card.Content> */}
 			<Card.Content>
 				<div className="ui two buttons">
 					<Button.Group>
@@ -96,8 +96,8 @@ const CharacterIndex = ({ user, msgAlert }) => {
 				</Button>
 			</Link>
 			<h1 className="index-header">Characters</h1>
-			<Container className="comic-panel">
-				<Card.Group centered>{CharacterCards}</Card.Group>
+			<Container className="comic-panel" >
+				<Card.Group centered itemsPerRow={3}>{CharacterCards}</Card.Group>
 			</Container>
 		</>
 	)

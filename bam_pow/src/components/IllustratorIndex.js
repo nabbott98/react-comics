@@ -90,7 +90,7 @@ const IllustratorIndex = ({ user, msgAlert }) => {
       </Link>
       <h1 className="index-header">Illustrators</h1>
       <Container className="comic-panel">
-        <Card.Group>{IllustratorCards}</Card.Group>
+        <Card.Group itemsPerRow={3}>{IllustratorCards}</Card.Group>
       </Container>
     </>
   );
