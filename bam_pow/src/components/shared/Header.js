@@ -5,8 +5,6 @@ import { NavDropdown } from "react-bootstrap"
 import { Link } from "react-router-dom"
 import { library } from "@fortawesome/fontawesome-svg-core"
 
-
-
 const linkStyle = {
 	color: "white",
 	textDecoration: "none",
@@ -15,7 +13,7 @@ const authenticatedOptions = (
 	<>
 		<Nav.Link>
 			<Link to="/discover" style={linkStyle}>
-			 	Discover
+				Discover
 			</Link>
 		</Nav.Link>
 		<Nav.Link>
@@ -23,36 +21,54 @@ const authenticatedOptions = (
 				My Page
 			</Link>
 		</Nav.Link>
-		<Nav.Link>
-			<Link to="/add-comic" style={linkStyle}>
-				Add Comic
-			</Link>
-		</Nav.Link>
+
+		<NavDropdown
+			bg="dark"
+			title={<i class="plus circle icon"></i>}
+			menuVariant="dark"
+		>
+			<NavDropdown.Item>
+				<Nav.Link>
+					<Link to="/add-comic" style={linkStyle}>
+						Add Comic
+					</Link>
+				</Nav.Link>
+			</NavDropdown.Item>
+			<NavDropdown.Item>
+				<Nav.Link>
+					<Link to="/add-author" style={linkStyle}>
+						Add Author
+					</Link>
+				</Nav.Link>
+			</NavDropdown.Item>
+			<NavDropdown.Item>
+				<Nav.Link>
+					<Link to="/add-character" style={linkStyle}>
+						Add Character
+					</Link>
+				</Nav.Link>
+			</NavDropdown.Item>
+			<NavDropdown.Item>
+				<Nav.Link>
+					<Link to="/add-illustrator" style={linkStyle}>
+						Add Illustrator
+					</Link>
+				</Nav.Link>
+			</NavDropdown.Item>
+			<NavDropdown.Item>
+				<Nav.Link>
+					<Link to="/add-publisher" style={linkStyle}>
+						Add Publisher
+					</Link>
+				</Nav.Link>
+			</NavDropdown.Item>
+		</NavDropdown>
+
 		<NavDropdown
 			bg="dark"
 			title={<i class="user icon"></i>}
 			menuVariant="dark"
 		>
-			<Nav.Link>
-				<Link to="/add-author" style={linkStyle}>
-					Add Author
-				</Link>
-			</Nav.Link>
-			<Nav.Link>
-				<Link to="/add-character" style={linkStyle}>
-					Add Character
-				</Link>
-			</Nav.Link>
-			<Nav.Link>
-				<Link to="/add-illustrator" style={linkStyle}>
-					Add Illustrator
-				</Link>
-			</Nav.Link>
-			<Nav.Link>
-				<Link to="/add-publisher" style={linkStyle}>
-					Add Publisher
-				</Link>
-			</Nav.Link>
 			<NavDropdown.Item>
 				<Nav.Link>
 					<Link to="change-password" style={linkStyle}>
