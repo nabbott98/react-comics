@@ -1,7 +1,8 @@
 # react-comics
 
 ## Intro
-This is an application where users can add to a continuously growing database of comic books. Users will be able to add comics to their own virtual library and get suggestions based on what they like and what they set alerts for. Never miss a comic from your favorite write again!
+This is an application where users can add to a continuously growing database of comic books. Users will be able to 'favorite' their favorite authors, characters, illustrators, and publishers. These 'favorites' guide the user to other comics they may be interested in. Never miss an issue featuring your favorite character again! 
+Admins have the ability to delete and edit entries making this a great app for comic book shops!
 
 ## Team Roles
   - Nick Abbott: Full Stack Developer
@@ -28,12 +29,16 @@ As a user I want to...
     -   publisher
     -   characters
     -   release date
--   Like a comic
--   View other comics based off of likes
--   View other comics based off of authors
--   View other comics based off of illustrators
--   View other comics based off of characters
--   View other comics based off of publishers
+    -   cover
+-   Favorite a(n):
+    -   author
+    -   illustrator
+    -   publisher
+    -   character
+-   View other comics based off of favorite authors
+-   View other comics based off of favorite illustrators
+-   View other comics based off of favorite characters
+-   View other comics based off of favorite publishers
 ​
 Stretch Goals
 ​
@@ -65,4 +70,6 @@ Stretch Goals
 
 ![Character Page](https://user-images.githubusercontent.com/112446901/202876308-7ea23ce4-bdb6-4b8c-9f41-260e16b1b145.png)
 
+## Growing Pains
 
+- Currently users can only add one favorite at a time
