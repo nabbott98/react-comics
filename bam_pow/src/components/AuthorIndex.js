@@ -99,7 +99,7 @@ const AuthorIndex = ({ user, msgAlert }) => {
       </Link>
       <h1 className="index-header">Authors</h1>
       <Container className="comic-panel">
-        <Card.Group centered itemsPerRow={3}>{AuthorCards}</Card.Group>
+        <Card.Group centered >{AuthorCards}</Card.Group>
       </Container>
     </>
   );

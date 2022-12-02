@@ -97,7 +97,7 @@ const CharacterIndex = ({ user, msgAlert }) => {
 			</Link>
 			<h1 className="index-header">Characters</h1>
 			<Container className="comic-panel" >
-				<Card.Group centered itemsPerRow={3}>{CharacterCards}</Card.Group>
+				<Card.Group centered >{CharacterCards}</Card.Group>
 			</Container>
 		</>
 	)
